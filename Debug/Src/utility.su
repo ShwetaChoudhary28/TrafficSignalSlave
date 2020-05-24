@@ -1,0 +1,5 @@
+utility.c:35:6:outputPin	16	static
+utility.c:250:6:inputPin	16	static
+utility.c:407:6:checkSide	0	static
+utility.c:443:6:checkFeedback	16	static
+utility.c:751:6:offAll	16	static
