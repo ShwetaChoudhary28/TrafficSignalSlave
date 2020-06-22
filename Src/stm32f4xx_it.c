@@ -61,6 +61,11 @@ extern UART_HandleTypeDef huart2;
 extern UART_HandleTypeDef huart3;
 extern UART_HandleTypeDef huart6;
 /* USER CODE BEGIN EV */
+extern void TimingDelay_Decrement();
+extern void TimingDelay_Decrement1();
+extern void TimingDelay_Decrement3();
+extern void TimingDelay_Decrement4();
+extern void TimingDelay_Decrement5();
 //----------for usart3------//
 uint8_t RecMsg3[250];
 extern int msgUnPrcd3;

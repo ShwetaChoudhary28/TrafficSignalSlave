@@ -11,7 +11,7 @@ laser.c:1166:6:transferToaRxBuffer	0	static
 laser.c:1180:6:clearingFrameBuffer	0	static
 laser.c:185:6:function66	16	static
 laser.c:352:6:function11	16	static
-laser.c:510:6:function10	24	static
+laser.c:510:6:function10	32	static
 laser.c:686:6:function6	24	static
 laser.c:102:6:laserM	16	static
 laser.c:955:7:function6_A	24	static

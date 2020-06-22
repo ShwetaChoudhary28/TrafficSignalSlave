@@ -24,7 +24,7 @@ int clearanceMode;
 int serverMode;
 uint8_t fileNo=111  ;
 extern int signVal ;
-__IO uint8_t string[125]; // string array to store messege received in uart
+__IO uint8_t string[126]; // string array to store message received in UART
 uint8_t junctionId=111  ;
 uint8_t noOfSides=0  ;
 uint8_t noOfPlans=0  ;

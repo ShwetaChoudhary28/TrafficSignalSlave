@@ -562,10 +562,10 @@ void function10()//slave1 to master
 	 	      frame[7]=pedestrain[0];// pedestrain1
 	 	      frame[8]=pedestrain[1];// pedestrain2
 	 	                  frame[9]=powerStatus;//power status
-// 	 	    	 	      frame[10]=0x03;//TBD
-// 	 	    	 	      frame[11]=0x05;//TBD
-// 	 	    	 	      frame[12]=0x04;//TBD
-// 	 	    	 	      frame[13]=0x06;//TBD
+ 	 	    	 	      frame[10]=0x03;//TBD
+ 	 	    	 	      frame[11]=0x05;//TBD
+ 	 	    	 	      frame[12]=0x04;//TBD
+ 	 	    	 	      frame[13]=0x06;//TBD
 // 	 	    	 	      frame[14]=0x02;//TBD
 // 	 	    	 	      frame[15]=0x22;//TBD
 // 	 	    	 	    frame[16]=0x02;//TBD
@@ -597,10 +597,10 @@ void function10()//slave1 to master
 	 	      Disp[7]=frame[7];
 	 	      Disp[8]=frame[8];
 	 	      Disp[9]=frame[9];
-// 	 	     Disp[10]= frame[11];
-// 	 	    Disp[11]= frame[12];
-// 	 	   Disp[12]= frame[13];
-// 	 	  Disp[13]= frame[14];
+ 	 	      Disp[10]= frame[11];
+ 	 	      Disp[11]= frame[12];
+ 	 	      Disp[12]= frame[13];
+ 	 	      Disp[13]= frame[14];
 // 	 	 Disp[14]= frame[15];
 // 	 	Disp[15]= frame[16];
 // 	 	Disp[16]=frame[17];
@@ -616,10 +616,10 @@ void function10()//slave1 to master
 		byteToIntegerVal(&Disp[0],0);
 		 	       	CRCValue =	HAL_CRC_Calculate(&hcrc,(uint32_t *)stringInt, 8);
 		 	       	intToByte(CRCValue);
-		           frame[10]=crcVal[3]; //CRC
-		           frame[11]=crcVal[2]; //CRC
-		           frame[12]=crcVal[1]; //CRC
-		           frame[13]=crcVal[0]; //CRC
+		           frame[14]=crcVal[3]; //CRC
+		           frame[15]=crcVal[2]; //CRC
+		           frame[16]=crcVal[1]; //CRC
+		           frame[17]=crcVal[0]; //CRC
 
 //	 	       	byteToIntegerVal(&Disp[0],0);
 //	 	       	CRCValue =	HAL_CRC_Calculate(&hcrc,(uint32_t *)stringInt, 8);
@@ -632,8 +632,8 @@ void function10()//slave1 to master
 
 
 
-	 frame[14]=125 ;
-	 frame[15]=125 ;
+	 frame[18]=125 ;
+	 frame[19]=125 ;
 
 	 // frame[22]= 0 ;
 	 // frame[23]= 0 ;
@@ -648,8 +648,8 @@ void function10()//slave1 to master
 
 
 	 //puts2(&frame[0],1);
-	 HAL_UART_Transmit (&huart6, (uint8_t*)frame,16,5000) ;
-	 HAL_UART_Transmit (&huart2, (uint8_t*)frame,16,5000) ;
+	 HAL_UART_Transmit (&huart6, (uint8_t*)frame,20,5000) ;
+	 HAL_UART_Transmit (&huart2, (uint8_t*)frame,20,5000) ;
 
 
 //	 HAL_GPIO_WritePin(GPIOD, GPIO_PIN_4, GPIO_PIN_RESET);
